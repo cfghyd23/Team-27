@@ -23,6 +23,15 @@ const SkillDevelopment = () => {
   </div>
 
   <div class="course-card">
+    <img src="https://www.kopykitab.com/blog/wp-content/uploads/2022/07/studying-3.jpg" alt="Course 3"></img>
+    <div class="course-details">
+      <h2>Stanford Introduction to Food and Health</h2>
+      <p>Around the world, we find ourselves facing global epidemics of obesity, Type 2 Diabetes and other predominantly diet-related diseases. To address these public health crises, we urgently need to explore innovative strategies for promoting healthful eating. There is strong evidence that global increases in the consumption of heavily processed foods, coupled with cultural shifts away from the preparation of food in the home, have contributed to high rates of preventable, chronic disease. In this course, learners will be given the information and practical skills they need to begin optimizing the way they eat.</p>
+      <a href="https://www.coursera.org/learn/food-and-health">Learn More</a>
+    </div>
+  </div>
+
+  <div class="course-card">
     <img src="https://www.avanse.com/blogs/images/Planning-to-study-abroad.jpg" alt="Course 3"></img>
     <div class="course-details">
       <h2>The Science of Well-Being</h2>
