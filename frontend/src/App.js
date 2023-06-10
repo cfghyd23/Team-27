@@ -1,12 +1,10 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-// import HomePage from './components/HomePage/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import NotFound from './components/NotFound';
-import ProvideHelp from './ProvideHelp/ProvideHelp';
+import ProvideHelp from './components/ProvideHelp/ProvideHelp';
 import FAQ from './components/faq';
 import SeekHelpAllForms from './components/SeekHelpAllForms/SeekHelpAllForms';
 import SkillDevelopment from './components/SkillDevelopment';
@@ -15,13 +13,14 @@ import QuizHome from './components/QuizHome';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import Profile from './components/Profile';
+import HomePage from './components/HomePage/Home';
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<HomePage />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/provide-help" element={<ProvideHelp />}></Route >
@@ -29,7 +28,7 @@ function App() {
         <Route path="/skilldevelopment" element={<SkillDevelopment />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/faq" element={<FAQ/>}></Route>
+        <Route path="/faq" element={<FAQ />}></Route>
         <Route path="/user" element={<User />}></Route>
         <Route path="/QuizHome" element={<QuizHome />}></Route>
         <Route path="/Quiz" element={<Quiz />}></Route>
