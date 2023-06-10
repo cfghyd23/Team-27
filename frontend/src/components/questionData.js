@@ -10,29 +10,24 @@ export const QuestionsData = [
     {
         question: "?",
         options:[
-            {text: "Node.js" },
-            {text: "TypeScript"},
-            {text: "npm" }
+            {text: "Yes"},
+            {text: "No"},
         ],
         answer: "npm"
     },
     {
         question: "Any Bleeding Gums?",
         options:[
-            {text: "Angular"},
-            {text: "jQuery" },
-            {text: "RequireJS" },
-            {text: "ESLint"}
+            {text: "Yes"},
+            {text: "No"},
         ],
         answer: "ESLint"
     },
       {
         question: "Any Nausea symptoms?",
         options:[
-            {text: "C++"},
-            {text: "Java" },
-            {text: "Python" },
-            {text: "Scala"}
+            {text: "Yes"},
+            {text: "No"},
         ],
         answer: "C++"
     },
@@ -40,10 +35,8 @@ export const QuestionsData = [
       {
         question: "Which of this not a javascript framework or library?",
         options:[
-            {text: "Express"},
-            {text: "React" },
-            {text: "Vue" },
-            {text: "Spring"}
+            {text: "Yes"},
+            {text: "No"},
         ],
         answer: "Spring"
     }  

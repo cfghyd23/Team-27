@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className='container'>
         <div className='row mt-5 pt-3'>
-            <div className='col-8 mx-auto d-flex flex-column direction-column gap-3 align-items-center rounded' style = {{flexWrap:"wrap",border:"solid black"}}
+            <div className='col-8 mx-auto d-flex flex-column direction-column gap-3 align-items-center rounded py-4' style = {{flexWrap:"wrap",border:"solid black"}}
             >
                 <h3 className='b'>Name : <span className='h3'>{Profiles.UserName}</span></h3>
                 <h3>Age : <span className='h3'>{Profiles.Age}</span></h3>

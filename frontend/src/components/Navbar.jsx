@@ -7,10 +7,10 @@ const Navbar = () => {
 
   return (
     <nav
-    className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"
-    style={{ position: "static" }}
+    className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top px-4"
+    style={{ position: "static" ,height:"70px"}}
   >
-    <div className="container">
+    <div className="container-fluid">
       <NavLink className="navbar-brand" style={{ fontSize: "30px" }} to="/">
         Rainbow
       </NavLink>

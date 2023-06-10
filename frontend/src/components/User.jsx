@@ -6,7 +6,7 @@ const User = () => {
       <div className="row">
         <div className="col-8 mx-auto mt-3 d-flex flex-column d-flex flex-column align-items-center">
           <div className="d-flex flex-column align-items-center mt-5 p-4 gap-3 rounded"
-          style={{width:"70%",border:"solid black"}}>
+          style={{width:"90%",border:"solid black"}}>
 
             <h3>Please Describe your Problem</h3>
 
