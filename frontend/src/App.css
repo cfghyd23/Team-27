@@ -50,7 +50,7 @@
 
 .question{
   width:40%;
-  heigth:60%;
+  height:60%;
   padding:30px;
   background:black;
 }
@@ -72,4 +72,8 @@
 
 .submit{
   background:orange;
+}
+
+body{
+  background: #eee;
 }
