@@ -13,6 +13,14 @@ const SkillDevelopment = () => {
             </div>
     </div>
 
+    <div class="course-card">
+    <img src="https://www.ofgad.com/wp-content/uploads/2019/05/Access-World-Leading-Research-e1560124451195.jpg" alt="Course 2"></img>
+    <div class="course-details">
+      <h2>Introduction to Statistics</h2>
+      <p>Stanford's "Introduction to Statistics" teaches you statistical thinking concepts that are essential for learning from data and communicating insights. By the end of the course, you will be able to perform exploratory data analysis, understand key principles of sampling, and select appropriate tests of significance for multiple contexts. </p>
+      <a href="https://www.coursera.org/learn/stanford-statistics">Learn More</a>
+    </div>
+  </div>
 
   <div class="course-card">
     <img src="https://www.avanse.com/blogs/images/Planning-to-study-abroad.jpg" alt="Course 3"></img>
