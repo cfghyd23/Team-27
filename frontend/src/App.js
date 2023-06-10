@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import NotFound from './components/NotFound';
+import FAQ from './components/faq';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path = "/" element = {<Home/>}></Route>
         <Route path = "/login" element = {<Login/>}></Route>
         <Route path = "/signup" element = {<SignUp/>}></Route>
-        <Route path = "/faq" element = {<SignUp/>}></Route>
+        <Route path = "/faq" element = {<FAQ/>}></Route>
         <Route path = "*" element = {<NotFound/>}></Route>
       </Routes>
     </>
