@@ -6,13 +6,7 @@ import HomePage from './components/HomePage/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import NotFound from './components/NotFound';
-import SkillDevelopment from './components/SkillDevelopment';
-import SeekHelpAllForms from './components/SeekHelpAllForms/SeekHelpAllForms';
-import User from './components/User';
-import QuizHome from './components/QuizHome';
-import Quiz from './components/Quiz';
-import Result from './components/Result';
-import Profile from './components/Profile';
+import FAQ from './components/faq';
 
 function App() {
   return (
