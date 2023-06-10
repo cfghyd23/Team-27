@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import NotFound from './components/NotFound';
+import ProvideHelp from './ProvideHelp/ProvideHelp';
 import FAQ from './components/faq';
 import SeekHelpAllForms from './components/SeekHelpAllForms';
 import SkillDevelopment from './components/SkillDevelopment';
@@ -24,8 +25,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/provide-help" element={<ProvideHelp />}></Route >
         <Route path="/seek-help-all-forms" element={<SeekHelpAllForms />}></Route>
-        <Route path="/" element={<Home />}></Route>
         <Route path="/skilldevelopment" element={<SkillDevelopment />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
