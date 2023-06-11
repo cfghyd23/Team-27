@@ -8,7 +8,7 @@ const NotFound = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className = 'col-8 rounded d-flex flex-column align-items-center' 
+        <div className = 'col-8 rounded d-flex flex-column align-items-center py-3' 
         style = {{border:"solid black"}}>
           <h1>The following page doesnot exist</h1>
           <button className='btn btn-primary'

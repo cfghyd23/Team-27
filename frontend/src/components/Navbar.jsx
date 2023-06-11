@@ -46,6 +46,39 @@ const Navbar = () => {
                 )
                 }
             </li>
+
+
+          { !text && (<li className="nav-item" style={{ fontSize: "20px" }}>
+              <NavLink className="nav-link" to="/profile">
+                    profile
+              </NavLink>
+          </li>)}
+
+          <li className="nav-item" style={{ fontSize: "20px" }}>
+              <NavLink className="nav-link" to="/faq">
+                    FAQ'S
+              </NavLink>
+          </li>
+
+          <li className="nav-item" style={{ fontSize: "20px" }}>
+              <NavLink className="nav-link" to="/need-help">
+                      Need Help?
+              </NavLink>
+          </li>
+
+          <li className="nav-item" style={{ fontSize: "20px" }}>
+              <NavLink className="nav-link" to="/skill-development">
+                      Skill Development
+              </NavLink>
+          </li>
+
+          <li className="nav-item" style={{ fontSize: "20px" }}>
+              <NavLink className="nav-link" to="/provide-help">
+                      Provide Help
+              </NavLink>
+          </li>
+
+
           <li className="nav-item" style={{ fontSize: "20px" }}>
               {
                 text?(
@@ -62,11 +95,8 @@ const Navbar = () => {
 
               )}
           </li>
-          <li className="nav-item" style={{ fontSize: "20px" }}>
-              <NavLink className="nav-link" to="/faq">
-                    FAQ'S
-              </NavLink>
-          </li>
+
+
         </ul>
       </div>
     </div>
