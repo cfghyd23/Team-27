@@ -1,9 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import QuizHome from './QuizHome';
+import { useContext } from 'react';
+import { MyContext } from './ContextAPI';
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
 
+  const { text, setText } = useContext(MyContext);
+  const navigate = useNavigate();
 
   return (
     <nav
@@ -26,15 +33,34 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navmenu">
         <ul className="navbar-nav ms-auto">
+
+
+            <li className="nav-item" style={{ fontSize: "20px" }}>
+                {
+                  text ?(<NavLink className="nav-link" to="/login">
+                  Login
+                </NavLink>):(
+                <NavLink className="nav-link" to="/quizhome">
+                  Quiz
+                </NavLink>
+                )
+                }
+            </li>
           <li className="nav-item" style={{ fontSize: "20px" }}>
-              <NavLink className="nav-link" to="/login">
-                Login
-              </NavLink>
-          </li>
-          <li className="nav-item" style={{ fontSize: "20px" }}>
-              <NavLink className="nav-link" to="/signup">
+              {
+                text?(
+                <NavLink className="nav-link" to="/signup">
                 Signup
-              </NavLink>
+              </NavLink>):(
+
+                      <button onClick={() => {
+                        setText(!text);
+                        navigate("/");
+                      }}>
+                      Logout
+                      </button>
+
+              )}
           </li>
           <li className="nav-item" style={{ fontSize: "20px" }}>
               <NavLink className="nav-link" to="/faq">
