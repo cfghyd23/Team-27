@@ -1,11 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react';
+import { MyContext } from './ContextAPI';
 
-
-const Login = () => {
+const Login = ({loggedIn,setloggedIn}) => {
 
   const navigate = useNavigate();
-
+  const { text, setText } = useContext(MyContext);
 
   return (
     <section className="vh-100" style={{backgroundColor: "#eee"}}>
@@ -71,7 +72,10 @@ const Login = () => {
                       <button
                         type="button"
                         className="btn btn-primary btn-lg"
-                        onClick={() => {navigate("/User")}}
+                        onClick={() => {
+                          setText(!text);
+                          navigate("/User")
+                        }}
                       >
                         Login
                       </button> 

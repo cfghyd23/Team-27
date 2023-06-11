@@ -15,14 +15,19 @@ import QuizHome from './components/QuizHome';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import Profile from './components/Profile';
+import ContextAPI from './components/ContextAPI';
+import { useState } from 'react';
+import { MyContext } from "./components/ContextAPI.js";
+
 
 function App() {
+
+  const [text, setText] = useState(true);
   return (
-    <>
-      <Navbar />
+    <MyContext.Provider value={{ text, setText }}>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/provide-help" element={<ProvideHelp />}></Route >
         <Route path="/seek-help-all-forms" element={<SeekHelpAllForms />}></Route>
@@ -37,7 +42,7 @@ function App() {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-    </>
+      </MyContext.Provider>
   );
 }
 
