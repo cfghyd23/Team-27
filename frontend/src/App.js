@@ -24,24 +24,23 @@ function App() {
   const [text, setText] = useState(true);
   return (
     <MyContext.Provider value={{ text, setText }}>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/provide-help" element={<ProvideHelp />}></Route >
-        <Route path="/seek-help-all-forms" element={<SeekHelpAllForms />}></Route>
-        <Route path="/skilldevelopment" element={<SkillDevelopment />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/provide-help" element={<ProvideHelp />}></Route >
+        <Route path="/notifications" element={<SeekHelpAllForms />}></Route>
+        <Route path="/skill-development" element={<SkillDevelopment />}></Route>
         <Route path="/faq" element={<FAQ />}></Route>
-        <Route path="/user" element={<User />}></Route>
-        <Route path="/QuizHome" element={<QuizHome />}></Route>
-        <Route path="/Quiz" element={<Quiz />}></Route>
+        <Route path="/need-help" element={<User />}></Route>
+        <Route path="/quizHome" element={<QuizHome />}></Route>
+        <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/result" element={<Result />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      </MyContext.Provider>
+    </MyContext.Provider>
   );
 }
 

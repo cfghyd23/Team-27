@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 
-
 const Quiz = () => {
 
   const [index, setIndex] = useState(0);
@@ -22,6 +21,7 @@ const Quiz = () => {
       return;
     }
     setIndex(index + 1);
+
   }
 
 

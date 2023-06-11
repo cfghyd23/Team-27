@@ -3,10 +3,13 @@ import React from "react";
 const User = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" style={{
+        width: "100%",
+        height: "70%",
+      }}>
         <div className="col-8 mx-auto mt-3 d-flex flex-column d-flex flex-column align-items-center">
           <div className="d-flex flex-column align-items-center mt-5 p-4 gap-3 rounded"
-          style={{width:"90%",border:"solid black"}}>
+            style={{ width: "90%", border: "solid black" }}>
 
             <h3>Please Describe your Problem</h3>
 
@@ -19,7 +22,7 @@ const User = () => {
               <option value="3">Others </option>
             </select>
 
-            <div className="mb-3 mt-3" style={{width:"75%"}}>
+            <div className="mb-3 mt-3" style={{ width: "75%" }}>
               <label for="description" class="form-label">
                 Describe Your Problem
               </label>
