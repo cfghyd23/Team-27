@@ -15,7 +15,13 @@ const SeekHelpAllForms = () => {
 
     return (
         <div>
-            <h2>Those who are in need</h2>
+            <h2 style={{
+                color: "#fcac04",
+                textAlign: "center",
+                fontSize: "2.5rem",
+                fontWeight: "bold",
+                marginTop: "2rem",
+            }}>Those who are in need</h2>
             <div className="filter">
                 <label htmlFor="filterTag">Filter by Tag:</label>
                 <select id="filterTag" value={filterTag} onChange={handleTagFilterChange} className="filter-select">
@@ -25,12 +31,15 @@ const SeekHelpAllForms = () => {
                     <option value="other">Other</option>
                 </select>
             </div>
-            <ul className="form-data-list">
+            <ul className="form-data-list" style={{
+                listStyle: "none",
+                padding: "0 15rem 0 15rem",
+            }}>
                 {filteredData.map((data, index) => (
                     <li key={index} className="form-data-item">
                         <div className="user">
                             <img src='/assests/dp.jpg' alt="User Profile" className="profile-image" />
-                            <p className="user-name">{data.user}</p>
+                            <p className="user-name" >{data.user}</p>
                         </div>
                         <div className="form-details">
                             <strong>Title:</strong> {data.title} <br />
