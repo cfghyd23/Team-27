@@ -1,6 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar';
+import HomePage from './components/HomePage/Home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import NotFound from './components/NotFound';
@@ -13,7 +14,6 @@ import QuizHome from './components/QuizHome';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import Profile from './components/Profile';
-import HomePage from './components/HomePage/Home';
 
 function App() {
   return (
