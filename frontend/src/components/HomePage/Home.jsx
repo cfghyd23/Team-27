@@ -43,7 +43,7 @@ const HomePage = () => {
     <input type="radio" name="radio-btn" id="img-4" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://nwcci.files.wordpress.com/2015/10/rainbowhome.jpg" />
+          <img src="https://loretorainbowhomes.in/images/about_us.jpg" />
         </div>
 		<div class="nav">
 			<label for="img-3" class="prev">&#x2039;</label>
