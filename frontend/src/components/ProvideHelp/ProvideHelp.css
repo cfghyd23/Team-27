@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333333;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0.75rem 0.5rem;
+  color: #333333;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioInput {
+  margin-right: 0.5rem;
+}
+
+.button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #fcb427;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
