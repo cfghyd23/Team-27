@@ -14,10 +14,15 @@ import QuizHome from './components/QuizHome';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import Profile from './components/Profile';
+import { useState } from 'react';
+import {MyContext} from './components/ContextAPI';
 
 function App() {
+
+  const [text,setText] = useState(true)
+
   return (
-    <>
+    <MyContext.Provider value={{ text, setText }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
@@ -36,7 +41,7 @@ function App() {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-    </>
+    </MyContext.Provider>
   );
 }
 
